@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white: white;
+    --bg-color: #FAFAFB;
+    --font: Roboto;
+    --fw: 400;
+    --fs: 12px;
+    --lh: 1.5;
+}
+body{
+    background: var(--bg-color);
+    font-family: var(--font);
+    font-weight: var(--fw);
+    height: 100%;
+    width: 100%;
+}
+.page-wrapper{
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background: var(--white);
+}
+.sidebar{
+    width: 250px;
+    height: calc(100% - 50px);
+    margin-top: 50px;
+    background: crimson;
+    position: fixed;
+}
+.page-body{
+    width: calc(100% - 250px);
+    background: yellow;
+    padding-top: 60px;
+    margin-left: 250px;
+    padding-left: 10px;
+}
